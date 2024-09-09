@@ -672,7 +672,7 @@ using custom variable `org-reveal-root'."
                 (append (list (cons reveal-css nil)
                               (cons theme-css "theme"))
                         (mapcar (lambda (a) (cons a nil))
-                                (split-string extra-css "\n")))
+                                (split-string extra-css "[ \t\n]+")))
                 "\n")
 
      ;; Include CSS for highlight.js if necessary
